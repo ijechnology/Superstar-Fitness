@@ -1,0 +1,144 @@
+body, html {
+	margin: 0;
+    padding: 0;
+	height: 100%;
+	background: #ebe7e7 !important;
+}
+
+.user_card {
+	height: 400px;
+	width: 350px;
+	margin-top: auto;
+	margin-bottom: auto;
+	background: #FFC436;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+}
+
+.brand_logo_container {
+	position: absolute;
+	height: 170px;
+	width: 170px;
+	top: -75px;
+	border-radius: 50%;
+	background: #ebe7e7;
+	padding: 10px;
+	text-align: center;
+}
+
+.brand_logo {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+}
+
+.form_container {
+	margin-top: 70px;
+}
+
+.login_btn {
+	width: 100%;
+	background: #0C356A !important;
+	color: white !important;
+}
+
+.login_btn:focus {
+	box-shadow: none !important;
+    border: none;
+	outline: 0px !important;
+}
+
+.input-group{
+    width: 300px;
+}
+
+.input-group-text {
+	background: #0C356A !important;
+	color: white !important;
+	border: 0 !important;
+	border-radius: 0.25rem 0 0 0.25rem !important;
+}
+
+.input_user,.input_pass:focus {
+	box-shadow: none !important;
+	outline: 0px !important;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+	background-color: #0C356A !important;
+}
+
+.tooltipp {
+    position: relative;
+    display: inline-block;
+    color: #0C356A;
+}
+
+.tooltipp.here i {
+    color: #0174BE;
+}
+
+.tooltipp .tooltipptext {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    background-color: #0C356A;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: white;
+}
+
+.tooltipp.here .tooltipptext {
+    background-color: #0174BE;
+}
+
+.tooltipp:hover .tooltipptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltipp-right {
+    top: -5px;
+    left: 125%;  
+}
+
+.tooltipp-right::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #0C356A transparent transparent;
+}
+
+.tooltipp.here .tooltipp-right::after {
+    border-color: transparent #0174BE transparent transparent;
+}
+
+.btn-info{
+    background-color: #0C356A;                              
+    border: #0C356A;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.fa{
+    color: #0C356A;
+}
+
+.active>.page-link, .page-link.active{
+    background-color: #0174BE;
+    border-color: #0174BE;
+}

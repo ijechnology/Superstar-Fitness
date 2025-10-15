@@ -1,0 +1,374 @@
+body{
+    background-color: #0C356A;
+    font-family: "Poppins", sans-serif;
+}
+
+ul { 
+    list-style: none; 
+    display: table;
+    text-align: center;
+}
+
+li { 
+    display: table-cell; 
+    position: relative; 
+}
+
+a, strong {
+    color: #FFF0CE;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+strong{
+    color: #FFF0CE;
+}
+
+strong:hover{
+    color: #FFC436;
+}
+
+ul>li>a.under:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #FFC436;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    color: #FFC436;
+}
+
+a.under:hover:after { 
+    width: 100%; 
+    left: 0; 
+    color: #FFC436;
+}
+
+.permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.join{
+    border-radius: 50px;
+    background-color: #0C356A;
+}
+
+.join:hover{
+    background-color: #FFC436;
+    color: #0C356A;
+    transition: background-color 500ms ease-out;
+}
+
+.fa-location-arrow{
+    border-radius: 50%;
+    padding: 3px;
+    margin-right: 5px;
+    margin-left: 0px;
+    background-color: transparent;
+    transition:
+    margin-right 0.5s,
+    margin-left 0.5s,
+    background-color 0.5s;
+}
+
+.join:hover:hover .fa-location-arrow{
+    background-color: #0C356A;
+    color: #FFC436;
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+.highlight {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px;
+    color: #fff;
+    text-align: left;
+    font-size: 16px;
+    background: #000;
+    border-radius: 20px;
+}
+
+.highlight *, .highlight:before, .highlight:after {
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+}
+
+.highlight p {
+    backface-visibility: hidden;
+    vertical-align: top;
+}
+
+.highlight:before, .highlight:after {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    content: '';
+    background-color: #fff;
+    z-index: 1;
+    opacity: 0;
+}
+
+.highlight:before {
+    width: 0;
+    height: 1px;
+}
+
+.highlight:after {
+    height: 0;
+    width: 1px;
+}
+
+.highlight figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 15px 20px;
+}
+
+.highlight h3, .highlight h4 {
+    margin: 0;
+    opacity: 0;
+}
+
+.highlight h4 {
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+.highlight a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.highlight:hover img, .highlight.hover img{
+    zoom: 1;
+    filter: alpha(opacity=20);
+    opacity: 0.2;
+}
+
+.highlight:hover:before, .highlight.hover:before, .highlight:hover:after, .highlight.hover:after {
+    opacity: 1;
+    transition-delay: 0.25s;
+}
+
+.highlight:hover:before, .highlight.hover:before {
+    width: 40px;
+}
+
+.highlight:hover:after, .highlight.hover:after {
+    height: 40px;
+}
+
+.highlight:hover h3, .highlight.hover h3, .highlight:hover h4, .highlight.hover h4 {
+    opacity: 1;
+}
+
+.highlight:hover h3, .highlight.hover h3 {
+    transition-delay: 0.3s;
+}
+
+.highlight:hover h4, .highlight.hover h4 {
+    transition-delay: 0.35s;
+}
+
+.animation {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.7s ease-out;
+    transition-delay: 0.4s;
+
+}
+
+.scroll-animation {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.form-control:focus ~ .form-label, .form-control:not(:placeholder-shown) ~ .form-label {
+    background-color: transparent !important;
+}
+
+.kotak img {
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+.zoom-effect:hover .kotak img {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+.animation-x {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.7s ease-out;
+    transition-delay: 0.4s;
+
+}
+
+.scroll-animation-x {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.foot{
+    color: wheat;
+}
+
+.foot:hover{
+    color: #FFC436;
+}
+
+strong.active{
+    color: #f7cf70;
+}
+
+.foot.active{
+    color: #f7cf70;
+}
+
+.tipe{
+    margin: 0px 20px;
+    height: 100px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #1a4377;
+}
+
+.tipe h4{
+    color: wheat; text-shadow: 3px 5px 8px #242930;
+}
+
+.tipe-active h4{
+    color: #FFC436;
+    text-shadow: 7px 4px 3px #242930;
+}
+
+.promo-container {
+    margin-top:50px;
+}
+.promos {
+    margin: 0 auto
+}
+
+.promos:before,
+.promos:after {
+    content: '';
+    display: table
+}
+
+.promos:after {
+    clear: both
+}
+
+.promo {
+    margin: 15px 10px 25px;
+    padding: 5px 0 30px;
+    font-weight: 400;
+    line-height: 1.625;
+    text-align: center
+}
+
+.promos.bg-base-1,
+.promos.bg-base-2,
+.promos.bg-base-3,
+.promos.bg-base-4,
+.promos.bg-base-5 {
+    background: transparent !important
+}
+
+.promos.bg-base-1 .promo {
+    background: #1a4377
+}
+
+.promo h4 {
+    margin: 15px 0 0;
+    font-size: 150%;
+    font-weight: normal
+}
+
+.promos.bg-base-1 .promo h4 {
+    color: #FFF
+}
+
+.promos.bg-base-1 .brief {
+    color: #FFF
+}
+
+.promo .price {
+    margin: 10px 0;
+    padding: 5px 0;
+    font-size: 250%
+}
+
+.promo .features {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+.promo .buy {
+    margin: 15px 0 0
+}
+
+.promos.bg-base-1 .promo .features {
+    color: #FFF
+}
+
+.promos.bg-base-1 .promo .price {
+    background: #1a4377;
+    color: #FFF
+}
+
+@media (min-width: 768px) {
+    .promo {
+        display: inline;
+        float: left;
+        width: 33.333%;
+        margin: 15px 0 0;
+        transition: transform 0.25s ease-out
+    }
+    .promo.first {
+        border-right: none
+    }
+    .promo.second {
+        float: right;
+        border-left: none
+    }
+    .promo.first:hover,
+    .promo.second:hover {
+        transform: translateY(-25px)
+    }
+    .scale {
+        transform: scale(1.2)
+    }
+    .promos.bg-base-1 .scale {
+        box-shadow: 0 0 4px 1px #FFC436;
+    }
+}
+
+@media (max-width: 767px) {
+    .promo {
+        margin-bottom: 2rem;
+        border-radius: .25rem
+    }
+    .promo:last-child {
+        margin-bottom: 0
+    }
+}
